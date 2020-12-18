@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1007759894631",
+    "firebase_url": "https://smartalarmsystem-c7470.firebaseio.com",
+    "project_id": "smartalarmsystem-c7470",
+    "storage_bucket": "smartalarmsystem-c7470.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007759894631:android:dadaa46b4b2dd1fc1d4cc2",
+        "android_client_info": {
+          "package_name": "com.sayantan.smartalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007759894631-4ouogiummfisfgrorhl8h37befdvneh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJvG1b5ffkL3hR3p5lz9a4FuaAUIdOxh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007759894631-4ouogiummfisfgrorhl8h37befdvneh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

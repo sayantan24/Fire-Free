@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#FFBF00"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context="com.sayantan.smartalarm.AlarmActivity">
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/fira_sans_extra_condensed_bold_italic"
+        android:gravity="center"
+        android:text="@string/fire_free"
+        android:textColor="#E10A0A"
+        android:textSize="45sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/monda"
+        android:text="@string/email_id"
+        android:textColor="#1B1A1A"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_alignBottom="@id/txtview2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/txtview2"
+        android:fontFamily="@font/acme"
+        android:gravity="fill_vertical"
+        android:text="@string/email"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview2"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/temperature"
+        android:textColor="#082AA1"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMail"
+        android:layout_alignTop="@id/textView4"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/textView4"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="fill_vertical"
+        android:text="@string/_0"
+        android:textColor="#131313"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_alignStart="@id/textView4"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/smoke"
+        android:textColor="#D3332F0B"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSmoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_alignTop="@id/textView6"
+        android:layout_alignBottom="@id/textView6"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/textView6"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="fill_vertical"
+        android:text="@string/not_detected"
+        android:textColor="#0E0E0E"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSmoke"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/safe"
+        android:textColor="#09970B"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btnAid"
+
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/coustard"
+        android:text="@string/first_aid_tips"
+        android:textColor="#F45B0B"
+        android:textColorHighlight="#D17411"
+        android:textColorLink="#C62424" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@id/btnAid"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/coustard"
+        android:text="@string/edit_details"
+        android:textColor="#0B27C5"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/lLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/swAlarm"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnPolice"
+            style="@android:style/Widget.Material.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/volkhov_bold"
+            android:text="@string/call_police"
+            android:textColor="#0B0A0A" />
+
+        <Button
+            android:id="@+id/btnFire"
+            style="@android:style/Widget.Material.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/volkhov_bold"
+
+            android:text="@string/fire_department"
+            android:textColor="#070707" />
+
+        <Button
+            android:id="@+id/btnAmbulance"
+            style="@android:style/Widget.Material.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/volkhov_bold"
+
+            android:text="@string/call_ambulance"
+            android:textColor="#040404" />
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/swAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/coustard"
+        android:text="@string/alarm_sound_off"
+        android:visibility="invisible" />
+
+</RelativeLayout>

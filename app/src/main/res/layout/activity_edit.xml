@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#78DAE1"
+    tools:context="com.sayantan.smartalarm.EditActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtField"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/new_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etMob"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/new_mobile">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/fira_sans_extra_condensed_bold_italic"
+        android:gravity="center"
+        android:text="@string/fire_free"
+        android:textColor="#D51212"
+        android:textSize="45sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/select_fields_to_edit"
+        android:textColor="#1B1A1A"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMob"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/coustard"
+        android:text="@string/save"
+        android:textColor="#121111" />
+
+    <Button
+        android:id="@+id/btnReset"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/coustard"
+        android:text="@string/reset"
+        android:textColor="#5A0498" />
+</RelativeLayout>

@@ -3,4 +3,6 @@
 
 ###### Programming language used is Java and XML for interface. IDE used is Android Studio.
 
-![](images/Screenshot_20210709-105249.png)
+<img src="images/Screenshot_20210709-105249.png" width=200/>
+<img src="images/Screenshot_20210709-105412.png" width=200/>
+<img src="images/Screenshot_20210709-105422.png" width=200/>

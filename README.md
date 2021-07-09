@@ -3,6 +3,14 @@
 
 ###### Programming language used is Java and XML for interface. IDE used is Android Studio.
 
-<img src="images/Screenshot_20210709-105249.png" width=200/>
-<img src="images/Screenshot_20210709-105412.png" width=200/>
-<img src="images/Screenshot_20210709-105422.png" width=200/>
+<table style="width:100%">
+  <tr>
+    <th><img src="images/Screenshot_20210709-105249.png" alt="Snow" style="width:200"></th>
+    <th> <img src="images/Screenshot_20210709-105412.png" alt="Forest" style="width:200"></th>
+    <th><img src="images/Screenshot_20210709-105422.png" alt="Mountains" style="width:200"></th>
+  </tr>
+ </table>
+
+
+
+
